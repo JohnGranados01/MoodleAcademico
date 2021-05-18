@@ -1,0 +1,40 @@
+<div class="container">
+    <br>
+    <h4>Calificar Tarea</h4>
+    <div class="card-md-8">
+        <div class="card-body">
+            <div class="card-title">
+                Profesor califique la tarea!
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="idTarea" class="form-label">Seleccione nombre tarea:</label>
+                    <select name="selectTareas" id="idTarea" class="form-control" required>
+                        <option selected value="">Escoja Tarea....</option>
+                        <option>..</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="estudiante" class="form-label">Seleccione Estudiante:</label>
+                    <select name="selectEstudiantes" id="estudiante" class="form-control" required>
+                        <option selected value="">Escoja Estudiante....</option>
+                        <option>..</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="nota" class="form-label">Nota correspondiente:</label>
+                    <input type="number" class="form-control" placeholder="12" id="titleTask" required>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row">
+        <button type="submit" class="btn btn-dark">Calificar</button>
+    </div>
+</div>
+

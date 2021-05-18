@@ -1,0 +1,56 @@
+<div class="container">
+    <br>
+    <h4>Buscar Materia</h4>
+    <div class="card-md-8">
+        <div class="card-body">
+            <div class="card-title">
+                Materias Profesor
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="materias" class="form-label">Seleccione materia:</label>
+                    <select name="selectMaterias" id="materias" class="form-control" required>
+                        <option selected value="">Escoja materia....</option>
+                        <option>..</option>
+                    </select>                    
+                </div>
+                <div class="col-md-2">
+                    <br>
+                    <button type="submit" class="btn btn-dark">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <p id="viewMatterTeacher">
+
+        </p>
+    </div>
+    <h4>Crear Tareas</h4>
+    <div class="card-md-8">
+        <div class="card-body">
+            <div class="card-title">
+                Agrege una nueva tarea!
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                   
+                    <label for="titleTask" class="form-label">Titulo Tarea:</label>
+                    <input type="text" class="form-control" placeholder="nueva tarea" id="titleTask" required>
+                    
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="col-md-6">
+                    <label for="description" class="form-label">Descripcion:</label>
+                    <input type="text" class="form-control" placeholder="...." id="description" required>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row col-md-3">
+        <button type="submit" class="btn btn-dark">Crear</button>
+    </div>
+</div>

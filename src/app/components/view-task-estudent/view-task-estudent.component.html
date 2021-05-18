@@ -1,0 +1,55 @@
+<div class="container">
+    <br>
+    <h4>Buscar Tarea</h4>
+    <div class="card-md-6">
+        <div class="card-body">
+            <div class="card-title">
+                Tareas Estudiante
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="materia" class="form-label">Seleccione materia:</label>
+                    <select name="materia" id="materia" class="form-control" required>
+                        <option selected value="">Escoja materia....</option>
+                        <option>..</option>
+                    </select>                    
+                </div>
+                <div class="col-md-1">
+                    <br>
+                    <button type="submit" class="btn btn-dark">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-md-6">
+        <div class="card-body">
+            <div class="card-title">
+                Agregar Entrega!
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="tarea" class="form-label">Seleccione tarea:</label>
+                    <select name="tarea" id="tarea" class="form-control" required>
+                        <option selected value="">Escoja tarea....</option>
+                        <option>..</option>
+                    </select>             
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="custom-file col-md-5">
+                    <label class="custom-file-label" for="archivo">Seleccionar Archivo</label>
+                    <input type="file" class="custom-file-input" id="archivo">
+                  </div>
+                <div class="col-md-1">
+                    <button type="submit" class="btn btn-dark">Guardar</button>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    
+    <div class="row">
+        <p id="viewTaskEstudent"></p>
+    </div>
+</div>
