@@ -8,7 +8,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
 import { UsersService } from "./users/users.service";
 import { ViewMatterTeacherComponent } from './components/view-matter-teacher/view-matter-teacher.component';
-import { ViewMatterEstudentComponent } from './components/view-matter-estudent/view-matter-estudent.component';
 import { ViewTaskEstudentComponent } from './components/view-task-estudent/view-task-estudent.component';
 import { QualifyTaskTeacherComponent } from './components/qualify-task-teacher/qualify-task-teacher.component';
 
@@ -18,7 +17,6 @@ import { QualifyTaskTeacherComponent } from './components/qualify-task-teacher/q
     LoginComponent,
     NavbarComponent,
     ViewMatterTeacherComponent,
-    ViewMatterEstudentComponent,
     ViewTaskEstudentComponent,
     QualifyTaskTeacherComponent
   ],
