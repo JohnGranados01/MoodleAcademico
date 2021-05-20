@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Materia } from '../../entidades/materia';
+import { environment } from '../../../environments/environment';
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'app-view-mater-teacher',
@@ -7,9 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewMatterTeacherComponent implements OnInit {
 
-  constructor() { }
+  materias: Materia[]=[
+    {nombre:"Sociales"},
+    {nombre:"Matematicas"}
+  ];
+
+  
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+  }
+
+  viewMateria(){
+    const res: any =this.http.get(`${environment.url}/materia/todos`);
+    return res;
+  }
+
+  addTask(){
+    
   }
 
 }

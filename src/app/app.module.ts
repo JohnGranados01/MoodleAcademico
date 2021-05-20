@@ -10,6 +10,7 @@ import { UsersService } from "./users/users.service";
 import { ViewMatterTeacherComponent } from './components/view-matter-teacher/view-matter-teacher.component';
 import { ViewTaskEstudentComponent } from './components/view-task-estudent/view-task-estudent.component';
 import { QualifyTaskTeacherComponent } from './components/qualify-task-teacher/qualify-task-teacher.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { QualifyTaskTeacherComponent } from './components/qualify-task-teacher/q
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     UsersService

@@ -11,12 +11,12 @@
                     <label for="materias" class="form-label">Seleccione materia:</label>
                     <select name="selectMaterias" id="materias" class="form-control" required>
                         <option selected value="">Escoja materia....</option>
-                        <option>..</option>
+                        <option *ngFor="let materia of materias" >{{materia.nombre}}</option>
                     </select>                    
                 </div>
                 <div class="col-md-2">
                     <br>
-                    <button type="submit" class="btn btn-dark">Buscar</button>
+                    <button type="submit" class="btn btn-dark" (click)="viewMateria()">Buscar</button>
                 </div>
             </div>
         </div>
